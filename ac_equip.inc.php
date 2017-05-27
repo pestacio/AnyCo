@@ -263,7 +263,7 @@
                 if (isset($_SESSION['lang']))
                     echo '<div style="float:right;font-size:15px">LANG:'.$_SESSION['lang'].'</div>';
                 else {
-                    echo '<div style="float:right;font-size:15px;margin-right:20px;margin-top:5px">'.date("Y-m-d H:i").'</div>';
+                    echo '<div style="float:right;font-size:15px;margin-right:20px;margin-top:5px;color:darkred">'.date("Y-m-d H:i").'</div>';
                 }
 #                   echo '<div style="float:right;font-size:15px"><select name="lang">'.$list->Show_Langs($_SESSION['lang']).'</select></div>';
 
