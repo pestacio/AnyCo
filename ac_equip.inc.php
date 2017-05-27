@@ -255,9 +255,9 @@
 		     '<div id="header">';
 
                 echo '<div style="float:left;font-size:15px">'.$empresa_App;
-                if (defined('LOGO_URL')) {
-			echo '<div style="float:left"><img src="' . LOGO_URL . '" alt="Company Icon"></div>';
-		}
+ #               if (defined('LOGO_URL')) {
+#			echo '<div style="float:left"><img src="' . LOGO_URL . '" alt="Company Icon"></div>';
+#		}
                 echo '</div>';
                 
                 if (isset($_SESSION['lang']))
