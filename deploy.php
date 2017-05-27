@@ -49,8 +49,8 @@ foreach ($allowed_ips as $allow) {
 }
 
 if (!$allowed) {
-	header('HTTP/1.1 403 Forbidden');
- 	echo "<span style=\"color: #ff0000\">Sorry, no hamster - better convince your parents!</span>\n";
+    header('HTTP/1.1 403 Forbidden');
+    echo "<span style=\"color: #ff0000\">Sorry, no hamster - better convince your parents!</span>\n";
     echo "</pre>\n</body>\n</html>";
     exit;
 }
@@ -74,6 +74,8 @@ $output = "\n";
 
 $log = "####### ".date('Y-m-d H:i:s'). " #######\n";
 
+$log .= "IP Local:[$ip]\n";
+
 foreach($commands AS $command){
     // Run it
     $tmp = shell_exec("sudo -u quadsys $command 2>&1");
@@ -85,7 +87,6 @@ foreach($commands AS $command){
     $log  .= "\$ $command\n".trim($tmp)."\n";
 }
 
-echo "IP Local:[$ip]";
 
 $log .= "\n";
 
