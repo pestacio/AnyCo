@@ -44,7 +44,7 @@
   # configurações gerais do Portal
   $config = new Equipment\Configuracao;
   $config->getInfoConfiguracao();
-  $title_App = $config->titulo;
+  $title_App = "AnyCo";
   $empresa_App = $config->empresa;
   $manutencao_App = $config->manutencao;
   $lang_App = $config->id_lang;
