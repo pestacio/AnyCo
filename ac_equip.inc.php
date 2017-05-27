@@ -252,9 +252,9 @@
 		     "  <title>$title_App</title>".
 		     '</head>'.
 		     '<body>'.
-		     '<div id="header">';
+		     '<div id="header" style="valign:middle">';
 
-                echo '<div style="float:left;font-size:15px">'.$empresa_App;
+                echo '<div style="float:left;font-size:15px;margin-top:5px">'.$empresa_App;
  #               if (defined('LOGO_URL')) {
 #			echo '<div style="float:left"><img src="' . LOGO_URL . '" alt="Company Icon"></div>';
 #		}
@@ -263,7 +263,7 @@
                 if (isset($_SESSION['lang']))
                     echo '<div style="float:right;font-size:15px">LANG:'.$_SESSION['lang'].'</div>';
                 else {
-                    echo '<div style="float:right;font-size:15px;margin-right:20px">'.date("Y-m-d H:i").'</div>';
+                    echo '<div style="float:right;font-size:15px;margin-right:20px;margin-top:5px">'.date("Y-m-d H:i").'</div>';
                 }
 #                   echo '<div style="float:right;font-size:15px"><select name="lang">'.$list->Show_Langs($_SESSION['lang']).'</select></div>';
 
