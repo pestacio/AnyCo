@@ -254,7 +254,7 @@
 		     '<body>'.
 		     '<div id="header" style="valign:middle">';
 
-                echo '<div style="float:left;font-size:15px;margin-top:5px">'.$empresa_App;
+                echo '<div style="float:left;font-size:15px;margin-top:5px;color:red">'.$empresa_App;
  #               if (defined('LOGO_URL')) {
 #			echo '<div style="float:left"><img src="' . LOGO_URL . '" alt="Company Icon"></div>';
 #		}
