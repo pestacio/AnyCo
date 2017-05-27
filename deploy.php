@@ -28,7 +28,7 @@ EOT;
 $allowed_ips = array(
 	'188.37.67.20' // VZG
 );
-$allowed = false;
+$allowed = true;
 
 $headers = apache_request_headers();
 
