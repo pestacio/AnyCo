@@ -40,7 +40,6 @@ if (@$headers["X-Forwarded-For"]) {
     $ip = $_SERVER['REMOTE_ADDR'];
 }
 
-#echo "IP Local:[$ip]";
 
 foreach ($allowed_ips as $allow) {
     if (stripos($ip, $allow) !== false) {
@@ -85,6 +84,8 @@ foreach($commands AS $command){
 
     $log  .= "\$ $command\n".trim($tmp)."\n";
 }
+
+echo "IP Local:[$ip]";
 
 $log .= "\n";
 
